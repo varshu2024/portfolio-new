@@ -1,21 +1,11 @@
-{
-  "name": {
-    "first": "Varshini",
-    "last": "Uppada",
-    "full": "Varshini Uppada"
-  },
+﻿{
+  "name": { "first": "Varshini", "last": "Uppada", "full": "Varshini Uppada" },
   "email": "varshuppada@gmail.com",
   "phone": "+91 8885405826",
   "tagline": "Building scalable APIs, distributed systems, and secure backend infrastructure at production scale.",
   "description": "Backend Developer with experience building scalable APIs using Python (FastAPI) and Node.js (Express.js), plus distributed streaming systems.",
-  "roles": {
-    "short": "Backend Developer",
-    "detailed": "Backend Developer · Python · Node.js · Distributed Systems · FastAPI · Kafka"
-  },
-  "location": {
-    "based": "Vizianagaram, India",
-    "availability": "India / Remote"
-  },
+  "roles": { "short": "Backend Developer", "detailed": "Backend Developer - Python - Node.js - Distributed Systems - FastAPI - Kafka" },
+  "location": { "based": "Vizianagaram, India", "availability": "India / Remote" },
   "available": true,
   "bio": "Backend Developer with experience building scalable APIs using Python (FastAPI) and Node.js (Express.js), plus distributed streaming systems. Built a secure payment gateway application with RSA encryption and MongoDB. Improved system performance (p95 latency reduced 25%, response time reduced 30%) using Redis caching, PostgreSQL optimization, and CI/CD automation. Experienced with Apache Kafka, Spark Streaming, Docker, Kubernetes, and full-stack observability tooling.",
   "stats": [
@@ -23,46 +13,11 @@
     { "value": "30%", "label": "Response Time Improved" },
     { "value": "300+", "label": "DSA Problems Solved" }
   ],
-  "skills": [
-    "Python",
-    "FastAPI",
-    "Node.js",
-    "Express.js",
-    "Django",
-    "Flask",
-    "REST APIs",
-    "JavaScript",
-    "Java",
-    "SQL",
-    "C++",
-    "React",
-    "MongoDB",
-    "PostgreSQL",
-    "MySQL",
-    "Redis",
-    "Cassandra",
-    "Apache Kafka",
-    "Spark Streaming",
-    "Docker",
-    "Kubernetes",
-    "Jenkins",
-    "Linux",
-    "Prometheus",
-    "Grafana",
-    "ELK Stack",
-    "RSA Encryption",
-    "CI/CD"
-  ],
+  "skills": ["Python","FastAPI","Node.js","Express.js","Django","Flask","REST APIs","JavaScript","Java","SQL","C++","React","MongoDB","PostgreSQL","MySQL","Redis","Cassandra","Apache Kafka","Spark Streaming","Docker","Kubernetes","Jenkins","Linux","Prometheus","Grafana","ELK Stack","RSA Encryption","CI/CD"],
   "experience": [
     {
-      "id": 0,
-      "role": "Backend Developer",
-      "company": "Aarvion Services Pvt Limited",
-      "companyShort": "AARVION",
-      "type": "Full-Time",
-      "location": "Hyderabad, India",
-      "period": "Jun 2026",
-      "periodEnd": "Oct 2026",
+      "id": 0, "role": "Backend Developer", "company": "Aarvion Services Pvt Limited", "companyShort": "AARVION",
+      "type": "Full-Time", "location": "Hyderabad, India", "period": "Jun 2026", "periodEnd": "Oct 2026",
       "bullets": [
         "Developed backend REST APIs for a payment gateway application using Node.js and Express.js.",
         "Designed and managed MongoDB data models for transactions and user data.",
@@ -71,17 +26,11 @@
         "Integrated React frontend components with backend APIs."
       ],
       "desc": "Built secure payment gateway backend with Node.js, Express.js, RSA encryption, MongoDB, and React integration.",
-      "tech": ["Node.js", "Express.js", "MongoDB", "RSA Encryption", "React", "REST APIs", "API Security"]
+      "tech": ["Node.js","Express.js","MongoDB","RSA Encryption","React","REST APIs","API Security"]
     },
     {
-      "id": 1,
-      "role": "Python Developer Intern",
-      "company": "Infosys Springboard",
-      "companyShort": "INFOSYS",
-      "type": "Internship",
-      "location": "Remote",
-      "period": "Dec 2025",
-      "periodEnd": "Feb 2026",
+      "id": 1, "role": "Python Developer Intern", "company": "Infosys Springboard", "companyShort": "INFOSYS",
+      "type": "Internship", "location": "Remote", "period": "Dec 2025", "periodEnd": "Feb 2026",
       "bullets": [
         "Developed 10+ FastAPI-based REST APIs handling 2,000+ requests/day, reducing p95 latency by 25%.",
         "Implemented Redis caching for high-traffic endpoints, improving response time by 30%.",
@@ -89,17 +38,11 @@
         "Delivered ML data pipeline endpoints with async I/O and query optimization, cutting API latency 30% and DB p95 response time 25%."
       ],
       "desc": "Built scalable FastAPI microservices, ML pipeline endpoints, Redis caching layers, and CI/CD automation for production ML systems.",
-      "tech": ["FastAPI", "Python", "Redis", "PostgreSQL", "Docker", "GitHub Actions", "pytest", "REST APIs"]
+      "tech": ["FastAPI","Python","Redis","PostgreSQL","Docker","GitHub Actions","pytest","REST APIs"]
     },
     {
-      "id": 2,
-      "role": "Software Developer Intern",
-      "company": "Bluestock",
-      "companyShort": "BLUESTOCK",
-      "type": "Internship",
-      "location": "Remote",
-      "period": "Oct 2025",
-      "periodEnd": "Nov 2025",
+      "id": 2, "role": "Software Developer Intern", "company": "Bluestock", "companyShort": "BLUESTOCK",
+      "type": "Internship", "location": "Remote", "period": "Oct 2025", "periodEnd": "Nov 2025",
       "bullets": [
         "Refactored backend modules (~5K+ LOC) in Python and C++, improving execution efficiency by 18%.",
         "Reduced production error rates by 20% through modular architecture and improved unit test coverage.",
@@ -107,206 +50,83 @@
         "Built RESTful IPO-tracking API with composite indexing cutting p95 latency 15%; resolved 30+ bugs improving mobile API response times 25%."
       ],
       "desc": "Backend service refactoring, Kafka microservices, REST API development, and production error reduction for a fintech platform.",
-      "tech": ["Python", "C++", "Spring Boot", "Apache Kafka", "REST APIs", "Microservices"]
+      "tech": ["Python","C++","Spring Boot","Apache Kafka","REST APIs","Microservices"]
     }
   ],
   "projects": [
     {
-      "id": 1,
-      "title": "Document Intelligence RAG",
-      "subtitle": "Hybrid RAG Pipeline with Knowledge Graph",
-      "type": "AI / GenAI",
-      "link": "https://github.com/varshu2024/Document-Intelligence-RAG-System",
-      "image": "/assets/project-rag.png",
-      "tech": ["FastAPI", "FAISS", "BM25", "LangChain", "Python", "Knowledge Graph", "RAG"],
-      "desc": "Developed a production-grade Retrieval-Augmented Generation (RAG) platform that enables intelligent document search and question answering across large collections. Combines vector search (FAISS) and keyword search (BM25) with a Knowledge Graph layer for multi-hop reasoning."
+      "id": 1, "title": "Document Intelligence - RAG Backend", "subtitle": "Hybrid Search RAG with Flask Dashboard",
+      "type": "AI / GenAI", "link": "https://github.com/varshu2024/Document-Intelligence-RAG-System",
+      "image": "/assets/project-rag.png", "tech": ["FastAPI","Flask","Jinja2","Redis","PostgreSQL","Python"],
+      "desc": "Built FastAPI-based RAG system with hybrid search (vector + keyword) over 50K+ documents. Reduced query latency by 40% via Redis caching and optimized retrieval pipelines. Added a lightweight Flask + Jinja2-templated internal dashboard for document upload monitoring and query analytics."
     },
     {
-      "id": 2,
-      "title": "ObjectBox On-Device RAG",
-      "subtitle": "Privacy-Preserving Local Inference",
-      "type": "AI / Privacy ML",
-      "link": "https://github.com/varshu2024/ObjectBox-RAG",
-      "image": "/assets/project-local-rag.png",
-      "tech": ["Python", "ObjectBox", "Sentence Transformers", "FastAPI", "HuggingFace", "Vector Embeddings", "Docker"],
-      "desc": "Built a privacy-preserving Retrieval-Augmented Generation system that operates entirely on local devices. Performs local document indexing, embedding generation, semantic retrieval, and QA with zero cloud dependencies."
+      "id": 2, "title": "Real-Time Fraud Detection System", "subtitle": "Distributed Transaction Streaming and Analytics",
+      "type": "Distributed Systems / ML", "link": "https://github.com/varshu2024/Real-time-fraud-detection",
+      "image": "/assets/project-fraud.png", "tech": ["Apache Kafka","Spark Streaming","Cassandra","Python","Docker"],
+      "desc": "Built Kafka + Spark Streaming pipeline processing 5,000+ transactions/min with sub-second latency. Implemented exactly-once processing using Kafka offset management and Cassandra. Deployed using Docker-based containerization for scalable and reproducible environments."
     },
     {
-      "id": 3,
-      "title": "Multimodal Emotion Fusion",
-      "subtitle": "Audio + Text Transformer with Cross-Modal Attention",
-      "type": "ML / Deep Learning",
-      "link": "https://github.com/varshu2024",
-      "image": "/assets/project-emotion.png",
-      "tech": ["Python", "PyTorch", "Fairseq", "wav2vec 2.0", "RoBERTa", "Transformers", "NumPy", "Pandas", "Scikit-learn"],
-      "desc": "Designed and implemented a multimodal emotion recognition system that combines speech and text. Uses wav2vec 2.0 for audio features, RoBERTa for text understanding, and custom cross-modal attention layers for fusion."
+      "id": 3, "title": "ObservaStack - Monitoring and Logging", "subtitle": "Centralized Monitoring and System Telemetry",
+      "type": "DevOps / Observability", "link": "https://github.com/varshu2024/ObservaStack",
+      "image": "/assets/project-observastack.png", "tech": ["Python","ELK Stack","Prometheus","Grafana","Logstash","Filebeat","Flask","Jinja2","Docker"],
+      "desc": "Built centralized logging pipeline using Python, Logstash, and Filebeat, reducing MTTD by ~40%. Integrated ELK Stack, Prometheus, and Grafana to monitor 10+ services and 50+ metrics. Exposed a Flask-based HTML5/CSS3 status dashboard using server-side Jinja2 templates for quick service health checks."
     },
     {
-      "id": 4,
-      "title": "CrediLens — XAI Credit Risk",
-      "subtitle": "Explainable Credit Risk with SHAP & LIME",
-      "type": "ML / XAI",
-      "link": "https://github.com/varshu2024/CrediLens",
-      "image": "/assets/project-credilens.png",
-      "tech": ["Python", "XGBoost", "Scikit-learn", "SHAP", "LIME", "Streamlit", "Pandas", "NumPy", "Matplotlib"],
-      "desc": "Developed an AI-powered credit risk assessment platform that predicts loan default probability. Integrated SHAP and LIME to help financial institutions understand model decisions and improve trustworthiness."
+      "id": 4, "title": "ObjectBox On-Device RAG", "subtitle": "Privacy-Preserving Local Inference",
+      "type": "AI / Privacy ML", "link": "https://github.com/varshu2024/ObjectBox-RAG",
+      "image": "/assets/project-local-rag.png", "tech": ["Python","ObjectBox","Sentence Transformers","FastAPI","HuggingFace","Vector Embeddings","Docker"],
+      "desc": "Reduced inference latency by 40% compared to cloud-based systems through optimized embedding retrieval. Developed fully local RAG system using ObjectBox with zero cloud dependency, enabling privacy-preserving inference without sending data to external servers."
     },
     {
-      "id": 5,
-      "title": "Real-Time Fraud Detection",
-      "subtitle": "Distributed Transaction Streaming & Analytics",
-      "type": "ML / Distributed Systems",
-      "link": "https://github.com/varshu2024/Real-time-fraud-detection",
-      "image": "/assets/project-fraud.png",
-      "tech": ["Python", "Apache Kafka", "Spark Streaming", "Cassandra", "Docker", "Redis", "PostgreSQL"],
-      "desc": "Built a distributed event-streaming platform capable of processing thousands of financial transactions per minute and detecting fraudulent activities in real time. Leveraged Kafka and Spark for high-throughput streaming."
+      "id": 5, "title": "Multimodal Emotion Fusion", "subtitle": "Audio + Text Transformer with Cross-Modal Attention",
+      "type": "ML / Deep Learning", "link": "https://github.com/varshu2024",
+      "image": "/assets/project-emotion.png", "tech": ["Python","PyTorch","Fairseq","wav2vec 2.0","RoBERTa","Transformers","NumPy","Pandas","Scikit-learn"],
+      "desc": "Fused wav2vec 2.0 (audio) and RoBERTa (text) with custom inter-modal attention on 10K+ samples using Fairseq. Improved weighted F1-score by 12% over single-modality baselines; outperformed BERT and DistilBERT benchmarks."
     },
     {
-      "id": 6,
-      "title": "ObservaStack — Logging & Observability",
-      "subtitle": "Centralized Monitoring & System Telemetry",
-      "type": "DevOps / Observability",
-      "link": "https://github.com/varshu2024/ObservaStack",
-      "image": "/assets/project-observastack.png",
-      "tech": ["Python", "ELK Stack", "Prometheus", "Grafana", "Filebeat", "Docker"],
-      "desc": "Created a centralized observability platform that aggregates logs, metrics, and system health information from multiple services, featuring real-time monitoring dashboards, alerting, and log analytics."
+      "id": 6, "title": "CrediLens - Explainable Credit Risk", "subtitle": "Explainable Credit Risk with SHAP and LIME",
+      "type": "ML / XAI", "link": "https://github.com/varshu2024/CrediLens",
+      "image": "/assets/project-credilens.png", "tech": ["Python","XGBoost","Scikit-learn","SHAP","LIME","Streamlit","Pandas","NumPy","Matplotlib"],
+      "desc": "Trained XGBoost classifier (0.87 ROC-AUC) on imbalanced data with SMOTE; explained predictions using SHAP and LIME. Built interactive Streamlit dashboard for real-time model interpretability accessible to non-technical stakeholders."
     },
     {
-      "id": 7,
-      "title": "BookNexus — Event-Driven Services",
-      "subtitle": "Kafka & Spring Boot Microservices",
-      "type": "Backend / Distributed Systems",
-      "link": "https://github.com/varshu2024/Spring-Boot-Based-Microservices",
-      "image": "/assets/project-booknexus.png",
-      "tech": ["Java", "Spring Boot", "Apache Kafka", "Axon Framework", "JWT", "Eureka Server", "Resilience4j", "Docker", "MySQL"],
-      "desc": "Designed and developed a scalable book management microservices ecosystem using event-driven architecture. Supports secure JWT authentication, asynchronous communication, service discovery, and fault tolerance."
+      "id": 7, "title": "Spring Boot Microservices Platform", "subtitle": "Cloud-Native Domain-Driven Microservices",
+      "type": "Cloud / Backend", "link": "https://github.com/varshu2024/Spring-Boot-Based-Microservices",
+      "image": "/assets/project-ddd-platform.png", "tech": ["Java 17","Spring Cloud","Kubernetes","Helm","Keycloak","PostgreSQL","MongoDB","Prometheus","Grafana","Loki","Tempo"],
+      "desc": "Domain-driven microservices (Course, Review, Composite, Gateway) with PostgreSQL + MongoDB polyglot persistence; Keycloak OAuth2/OIDC + RBAC auth; deployed via Helm charts on Minikube. Full observability (Prometheus, Grafana, Loki, Tempo) delivering sub-200ms p99 latency; Tilt live-reload cuts dev iteration cycles 60%."
     },
     {
-      "id": 8,
-      "title": "DDD Microservices Platform",
-      "subtitle": "Cloud-Native Domain-Driven Microservices",
-      "type": "Cloud / Backend",
-      "link": "https://github.com/varshu2024/Spring-Boot-Based-Microservices",
-      "image": "/assets/project-ddd-platform.png",
-      "tech": ["Java 17", "Spring Boot", "Spring Cloud", "Kubernetes", "Helm", "Keycloak", "PostgreSQL", "MongoDB", "Prometheus", "Grafana", "Loki", "Tempo"],
-      "desc": "Built a cloud-native microservices platform following Domain-Driven Design principles, featuring Keycloak SSO, API gateway routing, Kubernetes deployment, and a complete distributed observability stack."
+      "id": 8, "title": "NexusBooks - Enterprise Microservices", "subtitle": "CQRS and Event Sourcing with Kafka",
+      "type": "Backend / CQRS", "link": "https://github.com/varshu2024/NexusBooks",
+      "image": "/assets/project-nexusbooks.png", "tech": ["Java 11","Apache Kafka","Axon Framework","Resilience4j","JWT","Eureka","Zipkin","Spring Cloud"],
+      "desc": "Event-driven book-ops platform using CQRS + Event Sourcing (Axon); Kafka handles 10K+ events/min with at-least-once delivery and dead-letter queue failover. API Gateway with JWT, Eureka discovery, Resilience4j circuit breakers, and Zipkin tracing -- 99.95% simulated uptime under fault-injection testing."
     },
     {
-      "id": 9,
-      "title": "NexusBooks — CQRS & Event Sourcing",
-      "subtitle": "Enterprise Distributed Architecture",
-      "type": "Backend / CQRS",
-      "link": "https://github.com/varshu2024/NexusBooks",
-      "image": "/assets/project-nexusbooks.png",
-      "tech": ["Java", "Spring Boot", "Apache Kafka", "Axon Framework", "Spring Cloud", "Eureka", "JWT", "Resilience4j", "Zipkin", "Docker"],
-      "desc": "Developed an enterprise distributed system implementing CQRS and Event Sourcing patterns. Handles high-volume event processing with Kafka, utilizing Zipkin tracing and dead letter queues for resilience."
+      "id": 9, "title": "LogicLayer - Real-Time Collaborative IDE", "subtitle": "Real-Time Shared Workspaces and Execution",
+      "type": "Web / Collaborative Systems", "link": "https://github.com/varshu2024/LogicLayer",
+      "image": "/assets/project-logiclayer.png", "tech": ["React 18","TypeScript","Node.js","Socket.io","Docker","CodeMirror 6","Tldraw","Piston API"],
+      "desc": "Supports 50+ concurrent users with <80ms cursor-sync latency via WebSocket broadcasting; multi-language execution (Piston API), shared whiteboard, live presence. Containerized with Docker Compose; file-system CRUD + ZIP export; reduces dev environment setup time by 70% vs. manual configuration."
     },
     {
-      "id": 10,
-      "title": "LogicLayer — Collaborative IDE",
-      "subtitle": "Real-Time Shared Workspaces & execution",
-      "type": "Web / Collaborative Systems",
-      "link": "https://github.com/varshu2024/LogicLayer",
-      "image": "/assets/project-logiclayer.png",
-      "tech": ["React.js", "TypeScript", "Node.js", "Socket.io", "Docker", "CodeMirror 6", "Tldraw", "Piston API"],
-      "desc": "Built a collaborative online coding platform that allows developers to edit code simultaneously, communicate through shared workspaces, and execute programs in real time inside isolated environments."
-    },
-    {
-      "id": 11,
-      "title": "PolyCache — Distributed Cache",
-      "subtitle": "Reusable .NET Caching Provider Library",
-      "type": "C# / .NET",
-      "link": "https://github.com/varshu2024/PolyCache",
-      "image": "/assets/project-polycache.png",
-      "tech": ["C#", ".NET", "Redis", "SQL Server", "NuGet", "Factory Pattern", "Strategy Pattern"],
-      "desc": "Created a reusable distributed caching framework for .NET applications supporting multiple caching providers, enabling seamless switching between Redis, SQL Server, and in-memory caching."
-    },
-    {
-      "id": 12,
-      "title": "OpenEnv RL Environment",
-      "subtitle": "Custom Agent Training & Lifecycles",
-      "type": "AI / Reinforcement Learning",
-      "link": "https://github.com/varshu2024",
-      "image": "/assets/project-openenv.png",
-      "tech": ["Python", "OpenEnv", "Reinforcement Learning", "Docker", "REST APIs", "NumPy"],
-      "desc": "Developed and deployed a custom reinforcement learning environment for training and evaluating AI agents. Implemented reward engineering, state transitions, and step/reset evaluation APIs."
+      "id": 10, "title": "PolyCache - Distributed Cache Library", "subtitle": "Reusable .NET Caching Provider Library",
+      "type": "C# / .NET", "link": "https://github.com/varshu2024/PolyCache",
+      "image": "/assets/project-polycache.png", "tech": ["C#",".NET","Redis","SQL Server","NuGet","Strategy Pattern","Factory Pattern"],
+      "desc": "Pluggable caching library (Redis/SQL Server/in-memory); eliminates 40% redundant caching code, cuts DB read latency 60% via intelligent TTL management. Zero-refactor backend-switching via config only -- enables horizontal scalability across distributed deployments without application-layer changes."
     }
   ],
   "education": [
-    {
-      "id": 1,
-      "degree": "B.Tech in Electronics & Communication Engineering",
-      "institution": "Satya Institute of Technology and Management",
-      "cgpa": "8.12",
-      "period": "2023",
-      "periodEnd": "2027"
-    }
+    { "id": 1, "degree": "B.Tech in Electronics and Communication Engineering", "institution": "Satya Institute of Technology and Management", "cgpa": "8.12", "period": "2023", "periodEnd": "2027" }
   ],
   "publications": [
-    {
-      "id": 1,
-      "title": "Python Developer Internship Certification",
-      "platform": "Infosys Springboard",
-      "year": "2026",
-      "link": "https://github.com/varshu2024",
-      "desc": "Successfully completed python developer credentials and internship projects, building production APIs and automated testing pipelines."
-    },
-    {
-      "id": 2,
-      "title": "Problem Solving (Advanced) Certification",
-      "platform": "HackerRank",
-      "year": "2025",
-      "link": "https://www.hackerrank.com/profile/varshini2006",
-      "desc": "Verified credential demonstrating advanced algorithmic reasoning, data structures proficiency, and complex problem-solving skills."
-    },
-    {
-      "id": 3,
-      "title": "Winner — Elucode September Edition",
-      "platform": "Elucode",
-      "year": "2025",
-      "link": "https://github.com/varshu2024",
-      "desc": "Won the Elucode September Edition competitive programming contest, demonstrating strong algorithmic problem-solving skills."
-    },
-    {
-      "id": 4,
-      "title": "IBM AI Fundamentals Certification",
-      "platform": "IBM",
-      "year": "2025",
-      "link": "https://github.com/varshu2024",
-      "desc": "Certified in AI fundamentals covering machine learning concepts, data science workflows, and IBM AI tooling."
-    },
-    {
-      "id": 5,
-      "title": "Microsoft Azure AI Essentials Certification",
-      "platform": "Microsoft",
-      "year": "2025",
-      "link": "https://github.com/varshu2024",
-      "desc": "Validated foundational knowledge of AI and machine learning services on Microsoft Azure cloud platform."
-    },
-    {
-      "id": 6,
-      "title": "Tata GenAI Data Analytics Certification",
-      "platform": "Tata",
-      "year": "2025",
-      "link": "https://github.com/varshu2024",
-      "desc": "Completed GenAI and data analytics program covering generative AI applications in business and data workflows."
-    },
-    {
-      "id": 7,
-      "title": "AI Fluency Certification",
-      "platform": "Claude by Anthropic",
-      "year": "2025",
-      "link": "https://github.com/varshu2024",
-      "desc": "Earned AI Fluency credential demonstrating practical understanding of large language models and responsible AI usage."
-    },
-    {
-      "id": 8,
-      "title": "REST APIs & Databases Professional Certification",
-      "platform": "HackerRank",
-      "year": "2025",
-      "link": "https://www.hackerrank.com/profile/varshini2006",
-      "desc": "Validated core software engineering skills in relational database query optimization (PostgreSQL) and RESTful API architectures."
-    }
+    { "id": 1, "title": "Python Developer Internship Certification", "platform": "Infosys Springboard", "year": "2026", "link": "https://github.com/varshu2024", "desc": "Successfully completed python developer credentials and internship projects, building production APIs and automated testing pipelines." },
+    { "id": 2, "title": "Problem Solving (Advanced) Certification", "platform": "HackerRank", "year": "2025", "link": "https://www.hackerrank.com/profile/varshini2006", "desc": "Verified credential demonstrating advanced algorithmic reasoning, data structures proficiency, and complex problem-solving skills." },
+    { "id": 3, "title": "Winner - Elucode September Edition", "platform": "Elucode", "year": "2025", "link": "https://github.com/varshu2024", "desc": "Won the Elucode September Edition competitive programming contest, demonstrating strong algorithmic problem-solving skills." },
+    { "id": 4, "title": "IBM AI Fundamentals Certification", "platform": "IBM", "year": "2025", "link": "https://github.com/varshu2024", "desc": "Certified in AI fundamentals covering machine learning concepts, data science workflows, and IBM AI tooling." },
+    { "id": 5, "title": "Microsoft Azure AI Essentials Certification", "platform": "Microsoft", "year": "2025", "link": "https://github.com/varshu2024", "desc": "Validated foundational knowledge of AI and machine learning services on Microsoft Azure cloud platform." },
+    { "id": 6, "title": "Tata GenAI Data Analytics Certification", "platform": "Tata", "year": "2025", "link": "https://github.com/varshu2024", "desc": "Completed GenAI and data analytics program covering generative AI applications in business and data workflows." },
+    { "id": 7, "title": "AI Fluency Certification", "platform": "Claude by Anthropic", "year": "2025", "link": "https://github.com/varshu2024", "desc": "Earned AI Fluency credential demonstrating practical understanding of large language models and responsible AI usage." },
+    { "id": 8, "title": "REST APIs and Databases Professional Certification", "platform": "HackerRank", "year": "2025", "link": "https://www.hackerrank.com/profile/varshini2006", "desc": "Validated core software engineering skills in relational database query optimization (PostgreSQL) and RESTful API architectures." }
   ],
   "socials": [
     { "label": "GitHub",    "href": "https://github.com/varshu2024" },
