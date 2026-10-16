@@ -1,0 +1,447 @@
+/* ═══════════════════════════════════════════
+   SECTION
+═══════════════════════════════════════════ */
+.section {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  z-index: 1;
+  background: #000;
+  overflow: hidden;
+}
+
+/* ═══════════════════════════════════════════
+   VIDEO BACKGROUND
+═══════════════════════════════════════════ */
+.videoBg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.videoEl {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+/* Main dark overlay — extremely light so the video stays bright & visible */
+.videoOverlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.12);
+  z-index: 1;
+}
+
+/* Left fade for text area — subtle gradient to ensure text readability */
+.leftFade {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 48%;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.48) 0%,
+    rgba(0, 0, 0, 0.15) 75%,
+    transparent 100%
+  );
+  z-index: 2;
+}
+
+/* Cinematic letterbox bars */
+.cinemaTop,
+.cinemaBottom {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: clamp(20px, 4vh, 44px);
+  background: #000;
+  z-index: 3;
+}
+.cinemaTop    { top: 0; }
+.cinemaBottom { bottom: 0; }
+
+/* CRT scanlines — subtle cinematic grain */
+.scanlines {
+  position: absolute;
+  inset: 0;
+  z-index: 4;
+  background: repeating-linear-gradient(
+    to bottom,
+    transparent,
+    transparent 3px,
+    rgba(0,0,0,0.04) 3px,
+    rgba(0,0,0,0.04) 4px
+  );
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+/* ═══════════════════════════════════════════
+   LEFT TEXT CONTENT
+═══════════════════════════════════════════ */
+.heroContent {
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 5rem;
+  pointer-events: none;
+  max-width: 56%;
+}
+
+.eyebrow {
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.85);
+  margin-bottom: 0.8rem;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.9);
+}
+
+.hiLine {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-size: clamp(0.85rem, 1.2vw, 1.05rem);
+  font-weight: 500;
+  color: rgba(255,255,255,0.95);
+  letter-spacing: 0.04em;
+  margin-bottom: 0.3rem;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.9);
+}
+
+.waveEmoji {
+  display: inline-block;
+  animation: waveHand 2.2s ease-in-out infinite;
+  transform-origin: 70% 70%;
+  font-size: 1.4em;
+}
+@keyframes waveHand {
+  0%, 60%, 100% { transform: rotate(0deg); }
+  10%  { transform: rotate(18deg); }
+  30%  { transform: rotate(-8deg); }
+  40%  { transform: rotate(18deg); }
+}
+
+.name {
+  font-family: var(--font-baloo), sans-serif;
+  font-size: clamp(1.8rem, 3.5vw, 3.2rem);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  color: #fff;
+  text-shadow:
+    0 2px 10px rgba(0,0,0,0.85),
+    0 4px 30px rgba(0,0,0,0.45);
+}
+
+.role {
+  font-size: clamp(0.58rem, 0.75vw, 0.68rem);
+  font-weight: 600;
+  color: rgba(255,255,255,0.85);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-top: 0.8rem;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.9);
+}
+
+/* ── Waveform ─────────────────────────── */
+.waveBox {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  pointer-events: all;
+}
+
+.waveCanvas {
+  display: block;
+  border-radius: 8px;
+}
+
+.speakBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.55rem 1.25rem;
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.3);
+  border-radius: 999px;
+  color: rgba(255,255,255,0.9);
+  font-size: 0.76rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.2s, border-color 0.2s, transform 0.15s;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+.speakBtn:hover {
+  background: rgba(255,255,255,0.2);
+  border-color: rgba(255,255,255,0.6);
+  transform: translateY(-2px);
+}
+.speakBtnActive {
+  background: rgba(108,99,255,0.28);
+  border-color: rgba(108,99,255,0.7);
+}
+
+.speakDot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 0 8px rgba(255,255,255,0.9);
+  animation: dotPulse 0.5s ease-in-out infinite;
+  flex-shrink: 0;
+}
+@keyframes dotPulse {
+  0%, 100% { opacity: 1; transform: scale(1);    }
+  50%       { opacity: 0.4; transform: scale(0.7); }
+}
+
+/* ── Sound Toggle (Mute Button) ── */
+.muteBtn {
+  position: absolute;
+  bottom: clamp(28px, 5vh, 48px);
+  right: clamp(28px, 5vw, 48px);
+  z-index: 10;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.65rem 1.25rem;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 999px;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  white-space: nowrap;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: all;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+}
+
+.muteBtn:hover {
+  background: rgba(255, 255, 255, 0.18);
+  border-color: rgba(255, 255, 255, 0.5);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 40px rgba(0, 0, 0, 0.3);
+}
+
+.muteBtnMuted {
+  background: rgba(255, 107, 107, 0.15);
+  border-color: rgba(255, 107, 107, 0.4);
+  color: #ffb3b3;
+  animation: pulseMute 2s infinite;
+}
+
+@keyframes pulseMute {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(255, 107, 107, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 12px 4px rgba(255, 107, 107, 0.2);
+  }
+}
+
+/* ── CTA ──────────────────────────────── */
+.ctaWrap {
+  margin-top: 1.8rem;
+  pointer-events: all;
+}
+.ctaBtn {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.85rem 2rem;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.25);
+  border-radius: 999px;
+  cursor: pointer;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  transition: background 0.25s, border-color 0.25s, transform 0.2s;
+}
+.ctaBtn:hover {
+  background: rgba(255,255,255,0.18);
+  border-color: rgba(255,255,255,0.55);
+  transform: translateY(-2px);
+}
+.typeText {
+  font-size: clamp(0.78rem, 1.05vw, 1rem);
+  font-weight: 600;
+  color: rgba(255,255,255,0.92);
+  letter-spacing: 0.05em;
+  font-family: var(--font-geist-mono), monospace;
+}
+.cursor {
+  display: inline-block;
+  margin-left: 2px;
+  color: #fff;
+  animation: blink 1s step-end infinite;
+}
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0; }
+}
+
+/* ── Scroll cue ───────────────────────── */
+.scrollCue {
+  position: absolute;
+  bottom: clamp(28px, 5vh, 48px);
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  color: rgba(255,255,255,0.5);
+  cursor: pointer;
+  pointer-events: all;
+  border: none;
+  background: transparent;
+  padding: 0;
+  transition: color 0.2s;
+}
+.scrollCue:hover { color: #fff; }
+.scrollLabel {
+  font-size: 0.56rem;
+  font-weight: 600;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+}
+.scrollLine {
+  width: 1px; height: 36px;
+  background: currentColor;
+  animation: scrollPulse 1.8s ease-in-out infinite;
+  transform-origin: top;
+}
+@keyframes scrollPulse {
+  0%   { transform: scaleY(0); opacity: 0; }
+  40%  { transform: scaleY(1); opacity: 1; }
+  100% { transform: scaleY(1); opacity: 0; }
+}
+
+/* ═══════════════════════════════════════════
+   MOBILE
+═══════════════════════════════════════════ */
+@media (max-width: 767px) {
+  .heroContent {
+    padding: 0 1.4rem;
+    max-width: 100%;
+    justify-content: flex-end;
+    padding-bottom: 5rem;
+  }
+
+  .leftFade {
+    width: 100%;
+    background: linear-gradient(
+      to top,
+      rgba(0,0,0,0.88) 0%,
+      rgba(0,0,0,0.4)  55%,
+      transparent 100%
+    );
+  }
+
+  .videoEl { object-position: 65% center; }
+
+  .name     { font-size: clamp(2.8rem, 11vw, 4.5rem); }
+  .waveBox  { margin-top: 1rem; }
+  .ctaWrap  { margin-top: 1rem; }
+  .cinemaTop, .cinemaBottom { height: 16px; }
+  .scrollCue { bottom: 1.2rem; }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .heroContent { padding: 0 3rem; max-width: 62%; }
+}
+
+/* ── Video hidden state ── */
+.videoElHidden {
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* ── Cinematic abstract background ── */
+.cinematicBg {
+  position: absolute;
+  inset: 0;
+  background: #050508;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.glowOrb1 {
+  position: absolute;
+  top: 15%;
+  left: 20%;
+  width: min(450px, 65vw);
+  height: min(450px, 65vw);
+  background: radial-gradient(circle, rgba(108, 99, 255, 0.28) 0%, rgba(108, 99, 255, 0) 70%);
+  border-radius: 50%;
+  filter: blur(40px);
+  animation: floatOrb1 20s infinite ease-in-out;
+}
+
+.glowOrb2 {
+  position: absolute;
+  bottom: 10%;
+  right: 15%;
+  width: min(500px, 75vw);
+  height: min(500px, 75vw);
+  background: radial-gradient(circle, rgba(247, 147, 30, 0.18) 0%, rgba(247, 147, 30, 0) 70%);
+  border-radius: 50%;
+  filter: blur(50px);
+  animation: floatOrb2 25s infinite ease-in-out;
+}
+
+.gridOverlay {
+  position: absolute;
+  inset: 0;
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.012) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.012) 1px, transparent 1px);
+  background-size: 50px 50px;
+  background-position: center center;
+  pointer-events: none;
+  opacity: 0.85;
+}
+
+@keyframes floatOrb1 {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  33% {
+    transform: translate(30px, -40px) scale(1.1);
+  }
+  66% {
+    transform: translate(-20px, 20px) scale(0.9);
+  }
+}
+
+@keyframes floatOrb2 {
+  0%, 100% {
+    transform: translate(0, 0) scale(1.05);
+  }
+  50% {
+    transform: translate(-40px, 30px) scale(0.95);
+  }
+}

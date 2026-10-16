@@ -1,0 +1,22 @@
+{
+  "site": {
+    "tagline": "Portfolio 2026"
+  },
+  "hero": {
+    "taglineHighlight": "AI/ML",
+    "freelanceNote": "Open to AI/ML internships, backend engineering roles, and research opportunities.",
+    "availableLabel": "Available for opportunities",
+    "pills": ["RAG Systems", "Multimodal AI", "FastAPI Backend", "MLOps"],
+    "specialistStat": { "value": "AI + ML", "label": "Engineer" }
+  },
+  "interstitial": {
+    "availabilityLabel": "Availability",
+    "basedInLabel": "Based in",
+    "statLabels": ["Retrieval Accuracy\nBoost", "Latency\nReduction", "DSA Problems\nSolved"]
+  },
+  "footer": {
+    "eyebrow": "Available for AI/ML internships and backend engineering roles",
+    "ctaLines": ["Building intelligent", "systems that scale"],
+    "ctaAccent": "reliably."
+  }
+}
